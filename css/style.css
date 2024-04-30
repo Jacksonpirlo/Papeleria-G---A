@@ -1,0 +1,372 @@
+:root {
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   position: relative;
+   min-width: 320px;
+   color: var(--off-white);
+   width: 100%;
+   height: 334px;
+   background: #8E2DE2;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.navbar {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    height: 50px;
+    background-color: var(--off-white);
+    }
+    
+    .navbar-nav li {
+        margin: 10px;
+    }
+    
+    .navbar-nav li:hover {
+        background-color: #6828e9;
+        border-radius: 10px;
+        transition: all 1s ease;
+    }
+    
+    .navbar-nav li a {
+        font-size: 12px;
+    }
+    
+    .navbar-nav li a:hover {
+        color: var(--off-white);
+    }
+
+header img {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.header-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    width: 100%;
+}
+
+.header-buttom {
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /* sombra */
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+
+}
+
+/*  */
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.section-one .img-section-one {
+    background-image: url("../img/icons/undraw_writer_q06d.svg");
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    /* background-image: url('../assets/img/Bitcoin.svg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section-one-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 3.5rem;
+}
+
+.section-one-text h2 {
+    font-weight: bold;
+}
+
+.section-one-items .section-one-cards span i {
+    color: #6828e9;
+    font-size: 30px;
+}
+
+.section-one-items {
+    background-color: var(--black);
+    color: var(--just-white);
+    padding: 25px;
+}
+.section-one-items .section-one-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.section-one-items .section-one-cards article {
+    max-width: 400px;
+    width: 600px;
+}
+
+.section-one-items .section-one-cards span {
+    font-size: 20px;
+    color: #4A00E0;
+}
+
+.section-one-cards article {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--warm-black);
+    padding: 8px;
+    margin: 15px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.section-one-cards article span {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.section-one-cards article .p-title {
+    font-weight: bold;
+}
+/*  */
+.section-img {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #4A00E0;
+    background-repeat: no-repeat;
+    min-width: 32px;
+    width: 100%;
+    /* height: 10px; */
+    background-size: contain;
+    height: 100px;
+}
+
+.section-img h2  {
+    display: flex;
+    color: var(--off-white);
+}
+/*  */
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    text-align: center;
+}
+
+.plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.plans--title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans--title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.plans-container--card {
+    position: relative;
+    min-width: 230px;
+    width: 100%;
+    padding: 20px;
+    margin: 50px 20px 0;
+    scroll-snap-align: center;
+}
+
+ .plans-container--card .plans-desbord {
+    position: relative;
+    width: 100px;
+    height: 25px;
+    margin: 0 auto;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 12px;
+    top: 24px;
+    color: var(--just-white);
+    background-color: #6828e9;
+}
+
+.plans-price {
+    position: relative;
+    top: 150px;
+    right: 10px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.plans-price span {
+    position: relative;
+    vertical-align: text-top;
+    font-size: 10px;
+    font-weight: bold;
+    color: #757575;
+}
+
+.plans-min-card h3 {
+    position: relative;
+    top: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.plans-min-card {
+    position: relative;
+    bottom: 80px;
+     margin: 0 auto;
+     min-height: 300px;
+     max-width: 200px;
+     border-radius: 10px;
+     box-shadow: 1px 1px 30px 1px #757575;
+}
+
+.plans-min-card button a {
+    text-decoration: none;
+    color: var(--black);
+}
+.modific-cards {
+    position: relative;
+    top: 21px;
+}
+
+.plans-min-card img {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.plans-min-card button {
+    position: relative;
+    padding: 10px;
+    margin-top:10px;
+    color: var(--black);
+    top: 150px;
+    font-weight: 700;
+    border-radius: 5px;
+    font-family: "DM Sans", sans-serif;
+    border: 2px solid #6828e9;
+}
+
+.plans-min-card .dollar-theme {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/orange-right-arrow.svg');
+    vertical-align: text-bottom;
+}
+
+.plans-min-card .plans-text {
+    position: relative;
+    top: 90px;
+}
+
+.plans-container--slider {
+   display: flex;
+   height: 350px;
+   overflow-y: hidden;
+   overflow-x: scroll;
+   overscroll-behavior-x: contain;
+   scroll-snap-type: x proximity;
+}
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #6828e9;
+    color: var(--off-white);
+}
+
+footer p {
+    font-size: 9px;
+}
+
+footer .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #6828e9;
+    color: var(--off-white);
+}
+
+footer img {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
