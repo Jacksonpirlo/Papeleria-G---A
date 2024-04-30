@@ -41,31 +41,12 @@ header {
 }
 
 .navbar {
-    position: fixed;
-    z-index: 20;
-    width: 100%;
-    height: 50px;
-    background-color: var(--off-white);
-    }
-    
-    .navbar-nav li {
-        margin: 10px;
-    }
-    
-    .navbar-nav li:hover {
-        background-color: #6828e9;
-        border-radius: 10px;
-        transition: all 1s ease;
-    }
-    
-    .navbar-nav li a {
-        font-size: 12px;
-    }
-    
-    .navbar-nav li a:hover {
-        color: var(--off-white);
+    display: none;
     }
 
+.container-fluid {
+    display: none;
+}
 header img {
     height: 100px;
     width: 100px;
